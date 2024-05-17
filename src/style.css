@@ -1,0 +1,89 @@
+* {
+    background-color: #FFF8F1;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    font-family:'Playfair Display';
+    color:rgb(47, 60, 92);
+    font-size: 72px;
+    font-weight: 800;
+    margin: 40px 0 10px 0;
+}
+
+p {
+    text-align: center;
+    font-family:'Inter';
+    font-weight: 400;
+    font-size: 18px;
+    margin: 10px 0 10px 0;
+}
+
+
+textarea[name="user-input"] {
+    width: 979px;
+    height: 300px;
+    display: block;
+    margin: auto;
+    background-color: #FFFFFF;
+    border: none;
+    resize: none; 
+    /*Resize: permite que el usuario pueda redireccionar el textarea*/
+}
+
+textarea::placeholder {
+    font-family:'Inter';
+    font-weight: 400;
+    font-size: 18px;
+}
+
+
+.container{
+    /* margin: 10px 0 10px 0;*/
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.metrics {
+    font-family:'Inter';
+    font-size: 20px;
+    font-weight: 300;
+    list-style-type: none;
+    text-align: center;
+    column-count: 3;
+}
+
+.metrics li {
+    background-color: white;
+    color: black;
+    padding: 10px 50px 10px 10px; /* Espaciado dentro del botón, arriba, derecha, abajo, izquierda */
+    border-radius: 20px;
+    border: 2px solid #ECD8C5;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+#reset-button {
+    background-color: #F4C43C ;
+    color: black;
+    width: 200px;
+    height: 49px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 50px;
+    font-size: 22px;
+    font-family: 'Inter';
+    font-weight: 400;
+    border: none;
+    box-shadow:0px 4px 8px rgba(57, 56, 56, 0.573);
+}
+
+footer  p {
+    margin-right: -70vw;
+}
