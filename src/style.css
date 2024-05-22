@@ -28,8 +28,9 @@ textarea[name="user-input"] {
     height: 300px;
     display: block;
     margin: auto;
+    padding: 10px 0 0 10px;
     background-color: #FFFFFF;
-    border: none;
+    border: 2px solid #ab835f;
     resize: none; 
     /*Resize: permite que el usuario pueda redireccionar el textarea*/
 }
@@ -49,6 +50,7 @@ textarea::placeholder {
 }
 
 .metrics {
+    padding: 0;
     font-family:'Inter';
     font-size: 20px;
     font-weight: 300;
@@ -57,7 +59,7 @@ textarea::placeholder {
     column-count: 3;
 }
 
-.metrics li {
+.count-character, .character-without-space, .word-count, .number, .number-addition, .length {
     background-color: white;
     color: black;
     padding: 10px 50px 10px 10px; /* Espaciado dentro del botón, arriba, derecha, abajo, izquierda */
@@ -76,7 +78,7 @@ textarea::placeholder {
     margin-left: auto;
     margin-right: auto;
     display: block;
-    border-radius: 50px;
+    border-radius: 20px;
     font-size: 22px;
     font-family: 'Inter';
     font-weight: 400;
