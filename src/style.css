@@ -42,14 +42,14 @@ textarea::placeholder {
 }
 
 
-.container{
+div {
     /* margin: 10px 0 10px 0;*/
     display:flex;
     justify-content: center;
     align-items: center;
 }
 
-.metrics {
+ul {
     padding: 0;
     font-family:'Inter';
     font-size: 20px;
@@ -59,7 +59,7 @@ textarea::placeholder {
     column-count: 3;
 }
 
-.count-character, .character-without-space, .word-count, .number, .number-addition, .length {
+.list {
     background-color: white;
     color: black;
     padding: 10px 50px 10px 10px; /* Espaciado dentro del botón, arriba, derecha, abajo, izquierda */
@@ -68,6 +68,7 @@ textarea::placeholder {
     text-align: left;
     margin-bottom: 10px;
 }
+
 
 #reset-button {
     background-color: #F4C43C ;

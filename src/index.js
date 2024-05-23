@@ -4,10 +4,10 @@ import analyzer from "./analyzer.js";
 
 document.addEventListener("DOMContentLoaded", function () {
   const textarea = document.querySelector("textarea[name='user-input']");
-  const wordCountShow = document.querySelector(".word-count");
-  const characterCountShow = document.querySelector(".count-character");
-  const characterWithoutSpaceShow = document.querySelector(".character-without-space")
-  const getNumberCountShow = document.querySelector(".number")
+  const wordCountShow = document.querySelector("li[data-testid='word-count']");
+  const characterCountShow = document.querySelector("li[data-testid='character-count']");
+  const characterWithoutSpaceShow = document.querySelector("li[data-testid='character-no-spaces-count']")
+  const getNumberCountShow = document.querySelector("li[data-testid='number-count']")
 
   textarea.addEventListener("input", function () {
     const text = textarea.value;
