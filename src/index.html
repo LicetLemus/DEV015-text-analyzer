@@ -10,21 +10,20 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 </head>
-
 <body>
   <header>
-    <H1>Analizador de texto</H1>
+    <h1>Analizador de texto</h1>
   </header>
   <p>Bienvenido al Analizador de texto. 
     Por favor, ingresa el texto que deseas analizar en el campo a continuación:</p>
-  <div class="container">
-    <ul class="metrics">
-      <li>Caracteres:</li>
-      <li>Caracteres sin espacios:</li>
-      <li>Palabras:</li>
-      <li>Números:</li>
-      <li>Suma de números:</li>
-      <li>Promedio longitud:</li>
+  <div>
+    <ul>
+      <li class="list" data-testid="character-count">Caracteres:</li>
+      <li class="list" data-testid="character-no-spaces-count">Caracteres sin espacios:</li>
+      <li class="list" data-testid="word-count">Palabras:</li>
+      <li class="list" data-testid="number-count">Números:</li>
+      <li class="list" data-testid="number-sum">Suma de números:</li>
+      <li class="list" data-testid="word-length-average">Promedio longitud:</li>
     </ul>
   </div>
   <textarea name="user-input" placeholder="Introduce el texto aquí..." wrap="hard" ></textarea>
@@ -32,7 +31,6 @@
   <footer>
     <p>Autor: Licet Lemus</p>
   </footer>
-
   <script src="index.js" type="module"></script>
 </body>
 </html>
