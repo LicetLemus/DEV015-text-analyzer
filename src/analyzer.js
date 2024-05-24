@@ -34,54 +34,75 @@ const analyzer = {
 
   // 4. getNumberCount
   getNumberCount: (text) => {
-    const words = text.trim().split(/\s+/).filter(function (word) {
-      return word.length > 0;
-    });
+    const words = text
+      .trim()
+      .split(/\s+/)
+      .filter(function (word) {
+        return word.length > 0;
+      });
 
     const removeLastDot = (number) => {
-      return number.replace(/\.$/, "")
-    } 
+      return number.replace(/\.$/, "");
+    };
 
     let count = 0;
     for (let i = 0; i < words.length; i++) {
-      const number = Number(removeLastDot(words[i]))
+      const number = Number(removeLastDot(words[i]));
       if (number && words[i] !== " ") {
         count++;
       }
     }
-    return count
+    return count;
   },
 
   // 5. getNumberSum
 
   getNumberSum: (text) => {
-    const words = text.trim().split(/\s+/).filter(function (word) {
-      return word.length > 0;
-    });
+    const words = text
+      .trim()
+      .split(/\s+/)
+      .filter(function (word) {
+        return word.length > 0;
+      });
 
     const removeLastDot = (number) => {
-      return number.replace(/\.$/, "")
-    }
+      return number.replace(/\.$/, "");
+    };
 
     let suma = 0;
     for (let i = 0; i < words.length; i++) {
-      const number = Number(removeLastDot(words[i]))
+      const number = Number(removeLastDot(words[i]));
       if (number && words[i] !== " ") {
         suma = suma + number;
       }
     }
-    return suma
+    return suma;
   },
 
-  /*
   // 5. getAverageWordLength
-getAverageWordLength: (text) => {    
+  getAverageWordLength: (text) => {
+    // filtrar las palabras
+    const words = text
+      .trim()
+      .split(/\s+/)
+      .filter(function (word) {
+        return word.length > 0;
+      });
 
-},
+    // calcular la longitud total de cada palabra
+    let totalLength = 0;
+    for (let i = 0; i < words.length; i++) {
+      totalLength = totalLength + words[i].length;
+    }
 
-*/
+    // calcular el promedio de la longitud de las palabras
+    let averageLength = 0;
+    if (words.length > 0) {
+      averageLength = totalLength / words.length;
+    }
 
+    return Number(averageLength.toFixed(2));
+  },
 };
-
 
 export default analyzer;
