@@ -14,7 +14,7 @@
 
 * El analizador de texto, es un aplicación web que permite a la usuaria analizar el contenido de texto proporcionado por ella misma. Esta herramienta ofrece varias métricas como el recuento de palabras, el recuento de caracteres, el recuento de caracteres sin espacios y signos de puntuación, contar la cantidad de números en el texto, la suma de estos números y el promedio de longitud de las palabras. También incluye un botón para limpiar el contenido del área de texto.
 
-![vista del proyecto](images/app-proyecto.png)
+![vista del proyecto](https://github.com/LicetLemus/DEV015-text-analyzer/blob/main/Images/app-proyecto.png)
 
 ## 2. Características
 
@@ -42,7 +42,7 @@ El listado de funcionalidades es el siguiente:
 
 3. La aplicación permite limpiar el contenido de la caja de texto haciendo clic en el botón <Limpiar métricas>
 
-![metrics](images/metrics.gif)
+![metrics](https://github.com/LicetLemus/DEV015-text-analyzer/blob/main/Images/metrics.gif)
 
 ## 3. Tecnologías Utilizadas
 
